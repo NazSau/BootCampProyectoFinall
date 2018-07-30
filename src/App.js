@@ -12,6 +12,8 @@ import store from './store';
 import Layout from './pages/Layout/Layout';
 import Home from './pages/Home/Home';
 import Products from './pages/Products/Products';
+//import ProductsList from "./components/Cart/ProductList";
+
 
 class App extends Component {
 
@@ -22,6 +24,7 @@ class App extends Component {
                 <Router>
                     <Layout>
                         <Route path="/" exact component={ Home } />
+                        
                         <Route path="/products" component={ Products } />
                     </Layout>
                 </Router>
